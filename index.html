@@ -1,3 +1,143 @@
-This is my website
+<!DOCTYPE html>
 
-<b>bold<b/>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Need a new toolbox</title>
+
+  <!-- This sets the initial view for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.typekit.net/tyd1zig.css">
+
+  <style type="text/css" media="screen">
+    html {
+      /* Make iOS not resize on device rotation */
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+
+      /* NOTE
+      html is set to 62.5% so that all the REM measurements throughout Skeleton
+      are based on 10px sizing. So basically 1.5rem = 15px
+
+      Change this if you want to base your REM measuements on something other
+      than 10px as the base
+      */
+      font-size: 62.5%;
+    }
+
+    body {
+      font-size: 1.35em; /* currently ems cause chrome bug misinterpreting rems on body element */
+      line-height: 1.8;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-family: "verdana",sans-serif;
+    }
+
+    p.first {
+      margin-top:0;
+    }
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 2.4rem;
+      line-height: 1.35;
+    }
+
+    h4.title {
+      font-style:normal;
+      font-size:4rem;
+      font-family: "factoria",serif;
+      font-weight:500;
+      margin-top: 5rem;
+    }
+
+    h4.author {
+      font-family:"Factoria",serif;
+      font-weight:500;
+      margin-bottom: 5rem;
+    }
+
+    .wrapper {
+      display:flex;
+    }
+
+    .column {
+      width: 100rem; /* Set your column width here */
+      margin: auto;
+    }
+
+    /* Larger than mobile */
+    @media (min-width: 400px) {
+      .column {
+        width: 33rem; /* Set your column width here */
+      }
+    }
+
+    /* Larger than phablet (also point when grid becomes active) */
+    @media (min-width: 550px) {
+      .column {
+        width: 45rem; /* Set your column width here */
+        margin: auto;
+      }
+    }
+
+    /* Larger than tablet */
+    @media (min-width: 750px) {
+      .column {
+        width: 60rem; /* Set your column width here */
+        margin: auto;
+      }
+      p {
+        font-size: 6rem;
+      }
+    }
+
+    /* Larger than desktop */
+    @media (min-width: 1000px) {
+      .column {
+        width: 70rem; /* Set your column width here */
+        margin: auto;
+      }
+    }
+
+    /* Larger than Desktop HD */
+    @media (min-width: 1200px) {
+      .column {
+          width: 75rem; /* Set your column width here */
+          margin: auto;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="column">
+        <h4 class="title">Need a new toolbox</h4>
+        <h4 class="author">John Ridpath</h4>
+        <p class="first">Eye has covered webfonts several times, most recently in 'Andmoreagain,' a blog about the 2011 Ampersand conference, and 'New dawn', Jack Yan's excellent article in Eye 79, writes John Ridpath.</p>
+        <p>But as non-system fonts crop up on more and more websites, what are the realities currently faced by practitioners?</p>
+        <p>I spoke to developer Andy Walker and designer Conor Delahunty from London digital agency Made by Many about their working methods and the (missing) tools of their trade.</p>
+        <p><strong>John Ridpath:</strong><em> How ready are we for webfonts? Lots of typefaces haven't been optimised for the Web or properly hinted yet, for instance, so they still don't work consistently for all users.</em></p>
+        <p><strong>Andy Walker:</strong> There are issues that still need to be understood and addressed by type designers, Web designers and developers. @font-face has come of age, and this is my method of choice, because it does not perform any text replacement. This means that the text is still searchable, it's much more accessible to users with screen readers, and it's more easily styled (via CSS).</p>
+        <p>From a developer point of view there are strategies for implementing @font-face in a cross-browser compatible way. Tools such as Font Squirrelmake it easy for developers to generate 'bullet-proof' code and enough format variations of a font type to be able to provide maximum compatibility. Similarly, Typekit provides a brilliant API [application programming interface] for embedding, and all of the available fonts have licences compatible with the Web.</p>
+        <p>From a designer's point of view, it's important to know the limitations of the font they want to use before getting too attached to it or making it integral to the design. Does the licence allow embedding as a webfont? Is the font optimised for display on Windows (the Windows font-drawing algorithm relies on certain hinting in order to display legibly)? How does it look cross-browser?</p>
+        <p><strong>JR:</strong> <em>And what about from the design perspective?</em></p>
+        <p><strong>Conor Delahunty:</strong> We need a new design toolbox. The tools we use at the moment are bloated and not fit for the task. Photoshop, for example, is the main tool used by most Web designers, but it tries to be all things to all people. You can choose a font from Typekit (or similar) and produce a nice-looking design in Photoshop, but often when that is translated to a webpage it looks completely different, is difficult to read, and is inconsistent across browsers.</p>
+        <p>We need a program which understands the Web, understands mobile, and renders fonts true to how they will appear online. Also, Web designers need to become less precious about their work and collaborate with developers if they want to achieve the best possible results.</p>
+        <p><strong>JR:<em></strong> Any thoughts for the future?</em></p>
+        <p><strong>AW:</strong> My hope for the future is that browsers and operating systems get better at rendering font-face and that inconsistencies continue to diminish. I don't think Windows is going to change the way it draws fonts to the screen any time soon, but maybe type designers will become more attuned to the need to test for cross-browser and OS compatibility.</p>
+        <p>Font foundries seem to be getting much better at providing fonts with licences for Web and making terms much clearer to developers and designers, but I think there is still some way to go in terms of providing a wider range of compatible font formats.</p>
+    </div>
+  </div>
+
+
+</body>
+</html>
